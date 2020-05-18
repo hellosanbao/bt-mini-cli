@@ -66,9 +66,9 @@ class BeantechCli {
         if(!pageName) pageName = 'wechat'
         let dirPath = `${this.pagePath}/${pageName}`
         //读取wxss文件
-        let wxssStr = fs.readFileSync(path.resolve(this.root,'./temp.wxss'))
+        let wxssStr = fs.readFileSync('./temp.wxss','utf-8')
         //读取wxml文件
-        let wxmlStr = fs.readFileSync(path.resolve(this.root,'./temp.wxml'),'utf8').replace(/\$\{pageName\}/ig,pageName)
+        let wxmlStr = fs.readFileSync('./temp.wxml','utf8').replace(/\$\{pageName\}/ig,pageName)
         //读取json文件
         let json = {
             usingComponents: {}
@@ -88,7 +88,7 @@ class BeantechCli {
         let jsonStr = JSON.stringify(json,null,'\t')
         
         //读取js文件
-        let jsStr = fs.readFileSync(path.resolve(this.root,'./temp.js'),'utf-8')
+        let jsStr = fs.readFileSync('./temp.js','utf-8')
         jsStr = jsStr.replace('{{shareTitle}}',`'${pageName}'`)
         jsStr = jsStr.replace('{{sharePath}}',`'/pages/${pageName}/${pageName}'`)
 
