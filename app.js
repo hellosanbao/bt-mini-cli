@@ -4,7 +4,7 @@ const fs = require('fs')
 
 const config = {
     root: process.cwd(),
-    projectRoot: './miniprogram',
+    projectRoot: './src',
     pagePath: './pages'
 }
 
