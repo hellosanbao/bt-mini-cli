@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "bin":{
-    "bt-mili":"bin/server"
+    "bt-mini":"bin/server"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
