@@ -1,0 +1,5 @@
+<xd-page title="${pageName}">
+    <view class="content">
+        ${pageName}页面的内容
+    </view>
+</xd-page>
