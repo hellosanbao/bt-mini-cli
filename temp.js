@@ -1,5 +1,5 @@
 let app = getApp()
-App({
+Page({
     data:{},
     onLoad(){},
     onSHow(){},
